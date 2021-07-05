@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/resultWindow"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="234242"
+        android:background="@color/resultsInWindow"
+        android:hint="Password is 0000 ..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/centerHorizontalGuideLine"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:singleLine="true"
+        android:gravity='bottom|center'
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerHorizontalGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+
+    <GridLayout
+        android:id="@+id/buttonsPanel"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/centerHorizontalGuideLine">
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockDigitButtonTheme"
+            android:text="@string/btn1"
+            android:tag = "1" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockDigitButtonTheme"
+            android:text="@string/btn2"
+            android:tag = "2" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockDigitButtonTheme"
+            android:text="@string/btn3"
+            android:tag = "3" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockDigitButtonTheme"
+            android:text="@string/btn3"
+            android:tag = "4" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockDigitButtonTheme"
+            android:text="@string/btn5"
+            android:tag = "5" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockDigitButtonTheme"
+            android:text="@string/btn6"
+            android:tag = "6" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn7"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockDigitButtonTheme"
+            android:text="@string/btn7"
+            android:tag = "7" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn8"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockDigitButtonTheme"
+            android:text="@string/btn8"
+            android:tag = "8" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn9"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockDigitButtonTheme"
+            android:text="@string/btn9"
+            android:tag = "9" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn_enter"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockEnterButtonTheme"
+            android:text="@string/btn_enter"
+            android:drawableLeft="@drawable/ic_baseline_arrow_left_24"
+            android:tag = "Enter" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockDigitButtonTheme"
+            android:text="@string/btn0"
+            android:tag = "0" />
+        <com.animation.codelock.CodeLockButton
+            android:id="@+id/btn_clear"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/CodeLockClearButtonTheme"
+            android:text="@string/btn_clear"
+            android:tag = "Clear" />
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

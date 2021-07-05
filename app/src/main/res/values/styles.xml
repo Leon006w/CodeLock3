@@ -1,0 +1,23 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CodeLockDigitButtonTheme" parent="ThemeOverlay.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorButtonNormal">#F8F8F8</item>
+    </style>
+    <style name="CodeLockEnterButtonTheme" parent="ThemeOverlay.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorButtonNormal">#F8F8F8</item>
+    </style>
+    <style name="CodeLockClearButtonTheme" parent="ThemeOverlay.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorButtonNormal">#F8F8F8</item>
+
+    </style>
+</resources>
